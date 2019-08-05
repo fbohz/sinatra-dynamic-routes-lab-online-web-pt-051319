@@ -10,5 +10,7 @@ class App < Sinatra::Base
     num = params[:number]
     (num.to_i**2).to_s #run operation first then turn it back to string to pass test. 
   end
+  
+  
 
 end
