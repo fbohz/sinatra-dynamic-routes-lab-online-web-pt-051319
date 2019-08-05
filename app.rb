@@ -11,6 +11,13 @@ class App < Sinatra::Base
     (num.to_i**2).to_s #run operation first then turn it back to string to pass test. 
   end
   
-  
+   get '/say/:number/:phrase' do
+    string = ""
+    (params[:number].to_i).times do
+      string += "#{params[:phrase]}\n"
+    end
+    string
+  end
+
 
 end
